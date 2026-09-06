@@ -1,17 +1,18 @@
 :root{
-  /* Paleta tomada de tus propias fotos de producto: fondo crema de estudio + madera rojiza real */
-  --fondo: #F4E9DA;
-  --fondo-alt: #ECDEC7;
+  /* Fondo más oscuro y saturado que el crema de estudio de las fotos,
+     así las tarjetas blancas y los productos resaltan en vez de mezclarse */
+  --fondo: #C9A876;
+  --fondo-alt: #B8935F;
   --tarjeta: #FFFFFF;
   --marron-oscuro: #3A2213;
-  --marron-texto: #6E5A47;
+  --marron-texto: #4E3A26;
   --mahogany: #8B3A1B;
   --mahogany-oscuro: #6E2D14;
   --verde: #5C7A4C;
   --whatsapp: #3FA34D;
   --whatsapp-oscuro: #2F8A3E;
-  --borde: rgba(58,34,19,0.12);
-  --sombra: 0 8px 20px rgba(58,34,19,0.10);
+  --borde: rgba(58,34,19,0.18);
+  --sombra: 0 10px 24px rgba(58,34,19,0.22);
 
   --serif: "Fraunces", serif;
   --sans: "Nunito", sans-serif;
@@ -57,7 +58,7 @@ p{ margin: 0 0 1em; max-width: 60ch; }
 /* Nav */
 .site-nav{
   position: sticky; top:0; z-index: 30;
-  background: rgba(244,233,218,0.94);
+  background: rgba(201,168,118,0.94);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--borde);
 }
