@@ -3,135 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Segunda Vida — Muebles de madera reciclada</title>
-<meta name="description" content="Muebles y objetos de decoración hechos a mano con madera reciclada. Cada pieza tiene una historia previa.">
+<title>MaderArte Eco — Madera que sostiene tus ideas</title>
+<meta name="description" content="Portacelulares artesanales elaborados con retazos de madera aprovechable. Proyecto de emprendimiento escolar.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#inicio" class="logo">Segunda Vida</a>
+<nav class="site-nav">
+  <div class="wrap nav-inner">
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
-    <nav id="navLinks" class="nav-links">
-      <a href="#productos">Modelos</a>
-      <a href="#proceso">El proceso</a>
+    <div id="navLinks" class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyecto">El proyecto</a>
+      <a href="#productos">Productos</a>
+      <a href="#proceso">Proceso</a>
       <a href="#contacto">Contacto</a>
-    </nav>
+    </div>
   </div>
-</header>
+</nav>
 
 <main>
 
+  <!-- INICIO: logo + frase principal -->
   <section id="inicio" class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="hero-tag">Madera rescatada, hecha a mano</p>
-        <h1>Cada pieza ya vivió una vida antes de llegar a tu casa.</h1>
-        <p class="hero-lead">Trabajamos con madera de cajones, pallets y tablones descartados para construir muebles y objetos con vetas, marcas y nudos que ninguna fábrica puede copiar.</p>
-        <div class="hero-actions">
-          <a href="#productos" class="btn btn-primary">Ver modelos</a>
-          <a href="#contacto" class="btn btn-ghost">Consultar por WhatsApp</a>
+    <div class="wrap hero-inner">
+      <div class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="logo-svg">
+          <circle cx="60" cy="60" r="56" fill="#B07C45" opacity="0.15"/>
+          <path d="M60 14 L100 38 L100 82 L60 106 L20 82 L20 38 Z" fill="#FBF7EE" stroke="#472B18" stroke-width="2.5"/>
+          <path d="M38 55 Q60 40 82 55" stroke="#71915A" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M38 68 Q60 53 82 68" stroke="#B07C45" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="60" cy="60" r="6" fill="#472B18"/>
+        </svg>
+      </div>
+      <p class="hero-marca">MaderArte Eco</p>
+      <h1>Madera que sostiene tus ideas</h1>
+      <p class="hero-texto">Creamos portacelulares artesanales aprovechando retazos de madera y convirtiéndolos en productos útiles, creativos y funcionales para tu vida diaria.</p>
+      <div class="hero-acciones">
+        <a href="#productos" class="btn btn-primario">Ver modelos</a>
+        <a href="#proceso" class="btn btn-secundario">Conoce el proceso</a>
+      </div>
+    </div>
+    <svg class="hoja-decorativa hoja-1" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 5 C50 15 52 40 30 55 C8 40 10 15 30 5 Z" fill="#71915A" opacity="0.18"/></svg>
+  </section>
+
+  <!-- EL PROYECTO: descripción, problema, solución -->
+  <section id="proyecto" class="proyecto">
+    <div class="wrap proyecto-grid">
+
+      <div class="bloque-texto">
+        <span class="etiqueta">Sobre el proyecto</span>
+        <h2>Un emprendimiento escolar con madera aprovechada</h2>
+        <p>MaderArte Eco es un proyecto de emprendimiento escolar dedicado a elaborar portacelulares artesanales mediante el aprovechamiento de retazos y piezas de madera que todavía pueden ser utilizadas.</p>
+        <p>Transformamos estos materiales en productos resistentes, decorativos y funcionales. Nuestros portacelulares permiten colocar el celular de manera estable y mantener las manos libres mientras la persona estudia, trabaja o realiza otras actividades.</p>
+        <p>El proyecto une creatividad, trabajo artesanal, utilidad y responsabilidad ambiental.</p>
+      </div>
+
+      <div class="bloque-tarjetas">
+        <div class="mini-tarjeta">
+          <span class="mini-tarjeta-icono" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M6 30 L6 12 L20 6 L34 12 L34 30 Z" fill="none" stroke="#472B18" stroke-width="2"/><path d="M6 30 L34 30" stroke="#472B18" stroke-width="2"/></svg>
+          </span>
+          <h3>El problema</h3>
+          <p>Muchos retazos de madera de talleres, hogares y trabajos de carpintería dejan de utilizarse y terminan desechados, aunque todavía pueden convertirse en productos útiles. A la vez, muchas personas necesitan un soporte que mantenga su celular en una posición cómoda y estable mientras realizan otras actividades.</p>
+        </div>
+
+        <div class="mini-tarjeta">
+          <span class="mini-tarjeta-icono" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14" fill="none" stroke="#71915A" stroke-width="2"/><path d="M14 20 L18 24 L27 15" fill="none" stroke="#71915A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>La solución</h3>
+          <p>MaderArte Eco aprovecha retazos de madera para elaborar diferentes modelos de portacelulares. Cada producto es diseñado, cortado, lijado, ensamblado y probado para ofrecer estabilidad, comodidad y un buen acabado.</p>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 420 460" xmlns="http://www.w3.org/2000/svg" class="grain-art">
-          <rect x="0" y="0" width="420" height="460" fill="#3a2c22" rx="6"/>
-          <path d="M0 60 C 80 40, 150 90, 420 55" stroke="#5c4632" stroke-width="3" fill="none" opacity="0.6"/>
-          <path d="M0 120 C 100 95, 200 150, 420 115" stroke="#5c4632" stroke-width="4" fill="none" opacity="0.5"/>
-          <path d="M0 190 C 120 165, 210 215, 420 185" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.55"/>
-          <path d="M0 250 C 90 230, 220 280, 420 245" stroke="#5c4632" stroke-width="5" fill="none" opacity="0.5"/>
-          <path d="M0 320 C 110 300, 230 345, 420 310" stroke="#a8562f" stroke-width="3" fill="none" opacity="0.45"/>
-          <path d="M0 390 C 130 365, 240 415, 420 380" stroke="#5c4632" stroke-width="4" fill="none" opacity="0.55"/>
-          <circle cx="120" cy="130" r="10" fill="#211b16" opacity="0.5"/>
-          <circle cx="300" cy="270" r="7" fill="#211b16" opacity="0.4"/>
-          <circle cx="80" cy="360" r="5" fill="#c79a54" opacity="0.6"/>
-        </svg>
+
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="beneficios">
+    <div class="wrap">
+      <span class="etiqueta etiqueta-centrada">Beneficios</span>
+      <h2 class="centrado">¿Por qué un portacelular MaderArte Eco?</h2>
+      <div class="grid-beneficios">
+        <div class="beneficio"><h3>Manos libres</h3><p>Permiten utilizar el celular sin sostenerlo, ideal para clases, tutoriales o videollamadas.</p></div>
+        <div class="beneficio"><h3>Posición cómoda</h3><p>Mantienen el dispositivo en un ángulo estable, ya sea vertical u horizontal.</p></div>
+        <div class="beneficio"><h3>Mayor estabilidad</h3><p>Bases firmes pensadas para que el celular no se resbale al observar videos.</p></div>
+        <div class="beneficio"><h3>Madera aprovechada</h3><p>Elaborados a partir de retazos que de otro modo serían desechados.</p></div>
+        <div class="beneficio"><h3>Diseño artesanal</h3><p>Cada modelo tiene un acabado decorativo propio, inspirado en la naturaleza y los paisajes de Áncash.</p></div>
+        <div class="beneficio"><h3>Uso versátil</h3><p>Distintas alturas y posiciones según la actividad que estés realizando.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- PRODUCTOS -->
   <section id="productos" class="productos">
     <div class="wrap">
-      <h2>Modelos disponibles</h2>
-      <p class="section-lead">Piezas fijas y por encargo. Las medidas pueden ajustarse a tu espacio.</p>
+      <span class="etiqueta etiqueta-centrada">Nuestros modelos</span>
+      <h2 class="centrado">Seis diseños, un mismo propósito</h2>
+      <p class="section-lead centrado">Cada portacelular está hecho con retazos de madera aprovechable, lijado y ensamblado a mano.</p>
 
       <div class="grid-productos">
 
-        <article class="card-producto grain-a">
+        <article class="card-producto">
           <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#4a3626"/><path d="M0 40 Q150 20 300 45" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.5"/><path d="M0 100 Q150 80 300 105" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 150 Q150 135 300 155" stroke="#a8562f" stroke-width="2" fill="none" opacity="0.4"/></svg>
+            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><rect x="40" y="110" width="180" height="16" rx="6" fill="#B07C45"/><rect x="55" y="60" width="150" height="55" rx="8" fill="#8B5E34" transform="rotate(-3 130 88)"/><rect x="65" y="70" width="130" height="35" rx="4" fill="#472B18" opacity="0.15"/></svg>
           </div>
           <div class="card-body">
-            <span class="card-tag">Mesas</span>
-            <h3>Mesa Retorno</h3>
-            <p>Mesa de centro con tablero de pallet ensamblado y patas de madera de eucalipto recuperada.</p>
-            <span class="card-price">Desde S/ 280</span>
+            <span class="card-posicion">Horizontal</span>
+            <h3>Portacelular Clásico Horizontal</h3>
+            <p>Base amplia y estable. Permite colocar el celular horizontalmente para observar videos, clases y tutoriales.</p>
           </div>
         </article>
 
-        <article class="card-producto grain-b">
+        <article class="card-producto">
           <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#3f2f22"/><path d="M0 60 Q150 35 300 65" stroke="#c79a54" stroke-width="3" fill="none" opacity="0.5"/><path d="M0 120 Q150 100 300 125" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/></svg>
+            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><path d="M110 30 C70 40 65 90 95 115 C85 130 95 150 115 150 C135 150 145 130 135 115 C165 90 160 40 110 30 Z" fill="#8B5E34"/><rect x="95" y="95" width="70" height="30" rx="6" fill="#472B18" opacity="0.2" transform="rotate(-4 130 110)"/></svg>
           </div>
           <div class="card-body">
-            <span class="card-tag">Bancos</span>
-            <h3>Banco Killa</h3>
-            <p>Banco de dos plazas con respaldo curvo. "Killa" significa luna en quechua, por la forma del respaldo.</p>
-            <span class="card-price">Desde S/ 320</span>
+            <span class="card-posicion">Horizontal</span>
+            <h3>Portacelular Guitarra Eco</h3>
+            <p>Diseño inspirado en la forma de una guitarra. Combina utilidad y creatividad, convirtiéndose también en un elemento decorativo.</p>
           </div>
         </article>
 
-        <article class="card-producto grain-c">
+        <article class="card-producto">
           <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#443327"/><path d="M0 30 Q150 55 300 25" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.5"/><path d="M0 90 Q150 115 300 85" stroke="#a8562f" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 160 Q150 180 300 155" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/></svg>
+            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><path d="M130 25 C170 55 175 110 130 145 C85 110 90 55 130 25 Z" fill="#71915A" opacity="0.85"/><path d="M130 35 L130 135" stroke="#472B18" stroke-width="2" opacity="0.4"/><circle cx="150" cy="120" r="6" fill="#FBF7EE"/></svg>
           </div>
           <div class="card-body">
-            <span class="card-tag">Repisas</span>
-            <h3>Estante Raíz</h3>
-            <p>Estante de pared de tres niveles, ideal para plantas o libros. Herrajes de hierro reciclado.</p>
-            <span class="card-price">Desde S/ 150</span>
+            <span class="card-posicion">Vertical</span>
+            <h3>Portacelular Hoja Eco</h3>
+            <p>Inspirado en una hoja, relacionado con la naturaleza y el cuidado ambiental. Incluye una abertura para conectar el cargador.</p>
           </div>
         </article>
 
-        <article class="card-producto grain-a">
+        <article class="card-producto">
           <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#4a3626"/><path d="M0 50 Q150 25 300 55" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 110 Q150 90 300 115" stroke="#c79a54" stroke-width="2" fill="none" opacity="0.5"/></svg>
+            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><circle cx="130" cy="90" r="30" fill="#C79A54"/><g stroke="#B07C45" stroke-width="4" stroke-linecap="round"><line x1="130" y1="40" x2="130" y2="55"/><line x1="130" y1="125" x2="130" y2="140"/><line x1="80" y1="90" x2="95" y2="90"/><line x1="165" y1="90" x2="180" y2="90"/><line x1="95" y1="55" x2="105" y2="65"/><line x1="155" y1="115" x2="165" y2="125"/><line x1="95" y1="125" x2="105" y2="115"/><line x1="155" y1="65" x2="165" y2="55"/></g></svg>
           </div>
           <div class="card-body">
-            <span class="card-tag">Repisas</span>
-            <h3>Repisa Corteza</h3>
-            <p>Repisa flotante individual, conserva la corteza natural en uno de los bordes.</p>
-            <span class="card-price">Desde S/ 60</span>
+            <span class="card-posicion">Vertical</span>
+            <h3>Portacelular Sol Andino</h3>
+            <p>Inspirado en el sol andino. Combina diferentes tonalidades naturales de madera y mantiene el celular en posición vertical.</p>
           </div>
         </article>
 
-        <article class="card-producto grain-b">
+        <article class="card-producto">
           <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#3f2f22"/><path d="M0 70 Q150 45 300 75" stroke="#a8562f" stroke-width="3" fill="none" opacity="0.45"/><path d="M0 130 Q150 110 300 135" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.4"/></svg>
+            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><path d="M40 140 L100 60 L130 95 L160 50 L220 140 Z" fill="#8B5E34"/><path d="M100 60 L112 75 L88 85 Z" fill="#FBF7EE"/><path d="M160 50 L172 68 L148 76 Z" fill="#FBF7EE"/></svg>
           </div>
           <div class="card-body">
-            <span class="card-tag">Asientos</span>
-            <h3>Taburete Nudo</h3>
-            <p>Taburete bajo hecho de retazos ensamblados, cada uno con un patrón de vetas distinto.</p>
-            <span class="card-price">Desde S/ 90</span>
+            <span class="card-posicion">Horizontal</span>
+            <h3>Portacelular Nevado</h3>
+            <p>Inspirado en los paisajes nevados de Áncash. Distintas tonalidades de madera representan las montañas y la nieve.</p>
           </div>
         </article>
 
-        <article class="card-producto grain-c">
+        <article class="card-producto">
           <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#443327"/><path d="M0 40 Q150 65 300 35" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 100 Q150 125 300 95" stroke="#c79a54" stroke-width="2" fill="none" opacity="0.5"/></svg>
+            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><rect x="115" y="30" width="30" height="90" fill="#B07C45"/><rect x="70" y="115" width="120" height="14" rx="5" fill="#8B5E34"/><rect x="90" y="25" width="80" height="14" rx="5" fill="#472B18"/></svg>
           </div>
           <div class="card-body">
-            <span class="card-tag">Decoración</span>
-            <h3>Portamacetas Brote</h3>
-            <p>Soporte de piso para 3 macetas en distintas alturas, tratado para exteriores.</p>
-            <span class="card-price">Desde S/ 75</span>
+            <span class="card-posicion">Horizontal</span>
+            <h3>Portacelular Mirador Eco</h3>
+            <p>Soporte elevado que mantiene el celular a mayor altura. El espacio inferior también puede aprovecharse para pequeños objetos.</p>
           </div>
         </article>
 
@@ -139,39 +180,40 @@
     </div>
   </section>
 
+  <!-- PROCESO -->
   <section id="proceso" class="proceso">
-    <div class="wrap proceso-grid">
-      <div>
-        <h2>De descarte a mueble</h2>
-        <ol class="lista-proceso">
-          <li><strong>Rescate.</strong> Recolectamos madera de cajones, pallets y tablones que ya no sirven para su uso original.</li>
-          <li><strong>Selección.</strong> Separamos por tipo de madera, grosor y estado; descartamos lo que tenga daño estructural.</li>
-          <li><strong>Tratamiento.</strong> Lijado, sellado y en algunos casos tratamiento para exteriores.</li>
-          <li><strong>Ensamblado.</strong> Construcción a mano, pieza por pieza, cuidando que las marcas originales de la madera se mantengan visibles.</li>
-        </ol>
-      </div>
+    <div class="wrap">
+      <span class="etiqueta etiqueta-centrada">Cómo lo hacemos</span>
+      <h2 class="centrado">De retazo a portacelular</h2>
+      <ol class="lista-proceso">
+        <li><strong>Recolección y selección</strong> de los retazos de madera.</li>
+        <li><strong>Elección y dibujo</strong> del diseño.</li>
+        <li><strong>Medición</strong> de las piezas.</li>
+        <li><strong>Corte</strong> de la madera.</li>
+        <li><strong>Lijado y redondeado</strong> de los bordes.</li>
+        <li><strong>Ensamblado</strong> de las piezas.</li>
+        <li><strong>Aplicación</strong> del acabado.</li>
+        <li><strong>Prueba de estabilidad</strong> con diferentes celulares.</li>
+      </ol>
     </div>
   </section>
 
+  <!-- MENSAJE AMBIENTAL -->
+  <section class="ambiental">
+    <div class="wrap ambiental-inner">
+      <svg class="hoja-decorativa hoja-2" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 5 C50 15 52 40 30 55 C8 40 10 15 30 5 Z" fill="#FBF7EE" opacity="0.25"/></svg>
+      <p class="ambiental-texto">"En MaderArte Eco buscamos prolongar la utilidad de los retazos de madera mediante la creación de productos duraderos y funcionales. Cada pieza aprovechada representa una oportunidad para reducir desperdicios y promover un uso más responsable de los materiales."</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
   <section id="contacto" class="contacto">
-    <div class="wrap contacto-inner">
-      <h2>Hagamos un pedido</h2>
-      <p class="section-lead">Escríbenos con el modelo que te interesa, el color o medida que necesitas, y coordinamos.</p>
-      <div class="contacto-tarjeta">
-        <a class="contacto-item" href="https://wa.me/51999999999" target="_blank" rel="noopener">
-          <span class="contacto-label">WhatsApp</span>
-          <span class="contacto-valor">+51 999 999 999</span>
-        </a>
-        <a class="contacto-item" href="tel:+51999999999">
-          <span class="contacto-label">Llamadas</span>
-          <span class="contacto-valor">+51 999 999 999</span>
-        </a>
-        <a class="contacto-item" href="mailto:hola@segundavida.pe">
-          <span class="contacto-label">Correo</span>
-          <span class="contacto-valor">hola@segundavida.pe</span>
-        </a>
-      </div>
-      <p class="contacto-nota">* Reemplaza estos datos con tu número y correo reales en <code>index.html</code>.</p>
+    <div class="wrap centrado">
+      <h2>¿Te interesa un portacelular MaderArte Eco?</h2>
+      <p class="section-lead centrado">Estamos preparando nuestros canales de contacto. Vuelve pronto para escribirnos, o consulta con nosotros directamente si ya nos conoces.</p>
+      <!-- Cuando tengan número de WhatsApp, correo o red social definidos, agréguenlos aquí como en el ejemplo:
+      <a href="https://wa.me/51XXXXXXXXX" class="btn btn-primario">Escríbenos por WhatsApp</a>
+      -->
     </div>
   </section>
 
@@ -179,7 +221,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© <span id="anio"></span> Segunda Vida. Hecho con madera que ya había sido dada de baja.</p>
+    <p>© <span id="anio"></span> MaderArte Eco — Madera que sostiene tus ideas.</p>
   </div>
 </footer>
 

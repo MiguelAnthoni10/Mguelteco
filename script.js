@@ -8,7 +8,6 @@ if (navToggle && navLinks) {
     navToggle.setAttribute('aria-expanded', abierto ? 'true' : 'false');
   });
 
-  // Cierra el menú al elegir una sección (útil en mobile)
   navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('abierto');
