@@ -8,23 +8,26 @@ Sitio de una sola página para el proyecto de emprendimiento escolar MaderArte E
 - `style.css` — estilos: fondo marrón claro, tarjetas marfil, títulos marrón oscuro, acentos verdes
 - `script.js` — menú móvil y año dinámico del footer
 
+## Archivos (actualizado)
+
+- `logo.png` — el logo oficial de la marca (con fondo transparente), usado en el hero, en la barra de navegación y como ícono de la pestaña del navegador.
+- `fotos/` — fotos reales de los 6 modelos de portacelulares.
+
 ## Pendiente de completar (a propósito no se inventó nada)
 
 No se incluyeron precios, testimonios, certificaciones, cantidades vendidas, direcciones ni números de teléfono, porque no fueron proporcionados. Cuando los tengan:
 
 1. **Contacto**: en `index.html`, dentro de `<section id="contacto">`, hay un comentario `<!-- ... -->` que muestra cómo agregar un botón de WhatsApp, correo o red social apenas tengan esos datos.
-2. **Fotos reales**: cada producto usa una ilustración SVG simple como marcador visual (dentro de `.card-visual`). Cuando tengan fotos de los portacelulares terminados, reemplacen el `<svg>` de cada tarjeta por una etiqueta `<img src="fotos/nombre.jpg" alt="...">`.
-3. **Logo**: el logo actual es una ilustración SVG genérica (rombo con vetas). Si ya tienen un logo diseñado, pueden reemplazar el bloque `.logo-svg` en el hero por `<img src="logo.png" alt="Logo MaderArte Eco">`.
 
 ## Cómo publicarlo en GitHub Pages
 
 1. Crea un repositorio nuevo en GitHub.
-2. Sube `index.html`, `style.css` y `script.js` a la raíz del repositorio.
-   - Desde la web: **Add file → Upload files**, arrastra los archivos y confirma el commit.
+2. Sube `index.html`, `style.css`, `script.js`, `logo.png` y la carpeta `fotos/` completa a la raíz del repositorio.
+   - Desde la web: **Add file → Upload files**, arrastra todo (incluida la carpeta `fotos`) y confirma el commit.
    - O con Git:
      ```
      git init
-     git add index.html style.css script.js README.md
+     git add index.html style.css script.js logo.png fotos README.md
      git commit -m "Sitio MaderArte Eco"
      git branch -M main
      git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git

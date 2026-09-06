@@ -8,15 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="site-nav">
   <div class="wrap nav-inner">
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="#inicio" class="nav-logo">
+      <img src="logo.png" alt="MaderArte Eco" width="40" height="41">
+    </a>
     <div id="navLinks" class="nav-links">
       <a href="#inicio">Inicio</a>
       <a href="#proyecto">El proyecto</a>
@@ -24,6 +25,9 @@
       <a href="#proceso">Proceso</a>
       <a href="#contacto">Contacto</a>
     </div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -32,16 +36,7 @@
   <!-- INICIO: logo + frase principal -->
   <section id="inicio" class="hero">
     <div class="wrap hero-inner">
-      <div class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 120 120" class="logo-svg">
-          <circle cx="60" cy="60" r="56" fill="#B07C45" opacity="0.15"/>
-          <path d="M60 14 L100 38 L100 82 L60 106 L20 82 L20 38 Z" fill="#FBF7EE" stroke="#472B18" stroke-width="2.5"/>
-          <path d="M38 55 Q60 40 82 55" stroke="#71915A" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <path d="M38 68 Q60 53 82 68" stroke="#B07C45" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <circle cx="60" cy="60" r="6" fill="#472B18"/>
-        </svg>
-      </div>
-      <p class="hero-marca">MaderArte Eco</p>
+      <img src="logo.png" alt="MaderArte Eco — logo" class="logo-img">
       <h1>Madera que sostiene tus ideas</h1>
       <p class="hero-texto">Creamos portacelulares artesanales aprovechando retazos de madera y convirtiéndolos en productos útiles, creativos y funcionales para tu vida diaria.</p>
       <div class="hero-acciones">
@@ -111,8 +106,8 @@
       <div class="grid-productos">
 
         <article class="card-producto">
-          <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><rect x="40" y="110" width="180" height="16" rx="6" fill="#B07C45"/><rect x="55" y="60" width="150" height="55" rx="8" fill="#8B5E34" transform="rotate(-3 130 88)"/><rect x="65" y="70" width="130" height="35" rx="4" fill="#472B18" opacity="0.15"/></svg>
+          <div class="card-visual">
+            <img src="fotos/clasico-horizontal.jpg" alt="Portacelular Clásico Horizontal" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-posicion">Horizontal</span>
@@ -122,8 +117,8 @@
         </article>
 
         <article class="card-producto">
-          <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><path d="M110 30 C70 40 65 90 95 115 C85 130 95 150 115 150 C135 150 145 130 135 115 C165 90 160 40 110 30 Z" fill="#8B5E34"/><rect x="95" y="95" width="70" height="30" rx="6" fill="#472B18" opacity="0.2" transform="rotate(-4 130 110)"/></svg>
+          <div class="card-visual">
+            <img src="fotos/guitarra-eco.jpg" alt="Portacelular Guitarra Eco" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-posicion">Horizontal</span>
@@ -133,8 +128,8 @@
         </article>
 
         <article class="card-producto">
-          <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><path d="M130 25 C170 55 175 110 130 145 C85 110 90 55 130 25 Z" fill="#71915A" opacity="0.85"/><path d="M130 35 L130 135" stroke="#472B18" stroke-width="2" opacity="0.4"/><circle cx="150" cy="120" r="6" fill="#FBF7EE"/></svg>
+          <div class="card-visual">
+            <img src="fotos/hoja-eco.jpg" alt="Portacelular Hoja Eco" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-posicion">Vertical</span>
@@ -144,8 +139,8 @@
         </article>
 
         <article class="card-producto">
-          <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><circle cx="130" cy="90" r="30" fill="#C79A54"/><g stroke="#B07C45" stroke-width="4" stroke-linecap="round"><line x1="130" y1="40" x2="130" y2="55"/><line x1="130" y1="125" x2="130" y2="140"/><line x1="80" y1="90" x2="95" y2="90"/><line x1="165" y1="90" x2="180" y2="90"/><line x1="95" y1="55" x2="105" y2="65"/><line x1="155" y1="115" x2="165" y2="125"/><line x1="95" y1="125" x2="105" y2="115"/><line x1="155" y1="65" x2="165" y2="55"/></g></svg>
+          <div class="card-visual">
+            <img src="fotos/sol-andino.jpg" alt="Portacelular Sol Andino" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-posicion">Vertical</span>
@@ -155,8 +150,8 @@
         </article>
 
         <article class="card-producto">
-          <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><path d="M40 140 L100 60 L130 95 L160 50 L220 140 Z" fill="#8B5E34"/><path d="M100 60 L112 75 L88 85 Z" fill="#FBF7EE"/><path d="M160 50 L172 68 L148 76 Z" fill="#FBF7EE"/></svg>
+          <div class="card-visual">
+            <img src="fotos/nevado.jpg" alt="Portacelular Nevado" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-posicion">Horizontal</span>
@@ -166,8 +161,8 @@
         </article>
 
         <article class="card-producto">
-          <div class="card-visual" aria-hidden="true">
-            <svg viewBox="0 0 260 180"><rect width="260" height="180" fill="#EADFC8"/><rect x="115" y="30" width="30" height="90" fill="#B07C45"/><rect x="70" y="115" width="120" height="14" rx="5" fill="#8B5E34"/><rect x="90" y="25" width="80" height="14" rx="5" fill="#472B18"/></svg>
+          <div class="card-visual">
+            <img src="fotos/mirador-eco.jpg" alt="Portacelular Mirador Eco" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-posicion">Horizontal</span>
