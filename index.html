@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segunda Vida — Muebles de madera reciclada</title>
+<meta name="description" content="Muebles y objetos de decoración hechos a mano con madera reciclada. Cada pieza tiene una historia previa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="logo">Segunda Vida</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#productos">Modelos</a>
+      <a href="#proceso">El proceso</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-tag">Madera rescatada, hecha a mano</p>
+        <h1>Cada pieza ya vivió una vida antes de llegar a tu casa.</h1>
+        <p class="hero-lead">Trabajamos con madera de cajones, pallets y tablones descartados para construir muebles y objetos con vetas, marcas y nudos que ninguna fábrica puede copiar.</p>
+        <div class="hero-actions">
+          <a href="#productos" class="btn btn-primary">Ver modelos</a>
+          <a href="#contacto" class="btn btn-ghost">Consultar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 460" xmlns="http://www.w3.org/2000/svg" class="grain-art">
+          <rect x="0" y="0" width="420" height="460" fill="#3a2c22" rx="6"/>
+          <path d="M0 60 C 80 40, 150 90, 420 55" stroke="#5c4632" stroke-width="3" fill="none" opacity="0.6"/>
+          <path d="M0 120 C 100 95, 200 150, 420 115" stroke="#5c4632" stroke-width="4" fill="none" opacity="0.5"/>
+          <path d="M0 190 C 120 165, 210 215, 420 185" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.55"/>
+          <path d="M0 250 C 90 230, 220 280, 420 245" stroke="#5c4632" stroke-width="5" fill="none" opacity="0.5"/>
+          <path d="M0 320 C 110 300, 230 345, 420 310" stroke="#a8562f" stroke-width="3" fill="none" opacity="0.45"/>
+          <path d="M0 390 C 130 365, 240 415, 420 380" stroke="#5c4632" stroke-width="4" fill="none" opacity="0.55"/>
+          <circle cx="120" cy="130" r="10" fill="#211b16" opacity="0.5"/>
+          <circle cx="300" cy="270" r="7" fill="#211b16" opacity="0.4"/>
+          <circle cx="80" cy="360" r="5" fill="#c79a54" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos" class="productos">
+    <div class="wrap">
+      <h2>Modelos disponibles</h2>
+      <p class="section-lead">Piezas fijas y por encargo. Las medidas pueden ajustarse a tu espacio.</p>
+
+      <div class="grid-productos">
+
+        <article class="card-producto grain-a">
+          <div class="card-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#4a3626"/><path d="M0 40 Q150 20 300 45" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.5"/><path d="M0 100 Q150 80 300 105" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 150 Q150 135 300 155" stroke="#a8562f" stroke-width="2" fill="none" opacity="0.4"/></svg>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Mesas</span>
+            <h3>Mesa Retorno</h3>
+            <p>Mesa de centro con tablero de pallet ensamblado y patas de madera de eucalipto recuperada.</p>
+            <span class="card-price">Desde S/ 280</span>
+          </div>
+        </article>
+
+        <article class="card-producto grain-b">
+          <div class="card-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#3f2f22"/><path d="M0 60 Q150 35 300 65" stroke="#c79a54" stroke-width="3" fill="none" opacity="0.5"/><path d="M0 120 Q150 100 300 125" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/></svg>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Bancos</span>
+            <h3>Banco Killa</h3>
+            <p>Banco de dos plazas con respaldo curvo. "Killa" significa luna en quechua, por la forma del respaldo.</p>
+            <span class="card-price">Desde S/ 320</span>
+          </div>
+        </article>
+
+        <article class="card-producto grain-c">
+          <div class="card-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#443327"/><path d="M0 30 Q150 55 300 25" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.5"/><path d="M0 90 Q150 115 300 85" stroke="#a8562f" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 160 Q150 180 300 155" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/></svg>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Repisas</span>
+            <h3>Estante Raíz</h3>
+            <p>Estante de pared de tres niveles, ideal para plantas o libros. Herrajes de hierro reciclado.</p>
+            <span class="card-price">Desde S/ 150</span>
+          </div>
+        </article>
+
+        <article class="card-producto grain-a">
+          <div class="card-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#4a3626"/><path d="M0 50 Q150 25 300 55" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 110 Q150 90 300 115" stroke="#c79a54" stroke-width="2" fill="none" opacity="0.5"/></svg>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Repisas</span>
+            <h3>Repisa Corteza</h3>
+            <p>Repisa flotante individual, conserva la corteza natural en uno de los bordes.</p>
+            <span class="card-price">Desde S/ 60</span>
+          </div>
+        </article>
+
+        <article class="card-producto grain-b">
+          <div class="card-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#3f2f22"/><path d="M0 70 Q150 45 300 75" stroke="#a8562f" stroke-width="3" fill="none" opacity="0.45"/><path d="M0 130 Q150 110 300 135" stroke="#6e7b52" stroke-width="3" fill="none" opacity="0.4"/></svg>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Asientos</span>
+            <h3>Taburete Nudo</h3>
+            <p>Taburete bajo hecho de retazos ensamblados, cada uno con un patrón de vetas distinto.</p>
+            <span class="card-price">Desde S/ 90</span>
+          </div>
+        </article>
+
+        <article class="card-producto grain-c">
+          <div class="card-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#443327"/><path d="M0 40 Q150 65 300 35" stroke="#211b16" stroke-width="3" fill="none" opacity="0.4"/><path d="M0 100 Q150 125 300 95" stroke="#c79a54" stroke-width="2" fill="none" opacity="0.5"/></svg>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Decoración</span>
+            <h3>Portamacetas Brote</h3>
+            <p>Soporte de piso para 3 macetas en distintas alturas, tratado para exteriores.</p>
+            <span class="card-price">Desde S/ 75</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="proceso" class="proceso">
+    <div class="wrap proceso-grid">
+      <div>
+        <h2>De descarte a mueble</h2>
+        <ol class="lista-proceso">
+          <li><strong>Rescate.</strong> Recolectamos madera de cajones, pallets y tablones que ya no sirven para su uso original.</li>
+          <li><strong>Selección.</strong> Separamos por tipo de madera, grosor y estado; descartamos lo que tenga daño estructural.</li>
+          <li><strong>Tratamiento.</strong> Lijado, sellado y en algunos casos tratamiento para exteriores.</li>
+          <li><strong>Ensamblado.</strong> Construcción a mano, pieza por pieza, cuidando que las marcas originales de la madera se mantengan visibles.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="wrap contacto-inner">
+      <h2>Hagamos un pedido</h2>
+      <p class="section-lead">Escríbenos con el modelo que te interesa, el color o medida que necesitas, y coordinamos.</p>
+      <div class="contacto-tarjeta">
+        <a class="contacto-item" href="https://wa.me/51999999999" target="_blank" rel="noopener">
+          <span class="contacto-label">WhatsApp</span>
+          <span class="contacto-valor">+51 999 999 999</span>
+        </a>
+        <a class="contacto-item" href="tel:+51999999999">
+          <span class="contacto-label">Llamadas</span>
+          <span class="contacto-valor">+51 999 999 999</span>
+        </a>
+        <a class="contacto-item" href="mailto:hola@segundavida.pe">
+          <span class="contacto-label">Correo</span>
+          <span class="contacto-valor">hola@segundavida.pe</span>
+        </a>
+      </div>
+      <p class="contacto-nota">* Reemplaza estos datos con tu número y correo reales en <code>index.html</code>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="anio"></span> Segunda Vida. Hecho con madera que ya había sido dada de baja.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
