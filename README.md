@@ -15,9 +15,9 @@ Sitio de una sola página para el proyecto de emprendimiento escolar MaderArte E
 
 ## Pendiente de completar (a propósito no se inventó nada)
 
-No se incluyeron precios, testimonios, certificaciones, cantidades vendidas, direcciones ni números de teléfono, porque no fueron proporcionados. Cuando los tengan:
+No se incluyeron precios, testimonios, certificaciones, cantidades vendidas ni direcciones, porque no fueron proporcionados.
 
-1. **Contacto**: en `index.html`, dentro de `<section id="contacto">`, hay un comentario `<!-- ... -->` que muestra cómo agregar un botón de WhatsApp, correo o red social apenas tengan esos datos.
+**Número de WhatsApp**: se usó `51999999999` como número de ejemplo. Aparece 9 veces en `index.html` (barra de navegación, inicio, cada una de las 6 tarjetas de producto, y la sección de contacto). Para poner el número real, abre `index.html` y reemplaza `51999999999` por tu número con código de país, sin espacios ni símbolos (ej. `51987654321`). Puedes usar buscar y reemplazar en cualquier editor de texto.
 
 ## Cómo publicarlo en GitHub Pages
 
