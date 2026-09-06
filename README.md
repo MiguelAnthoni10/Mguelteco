@@ -11,7 +11,7 @@ Sitio de una sola página para el proyecto de emprendimiento escolar MaderArte E
 ## Archivos (actualizado)
 
 - `logo.png` — el logo oficial de la marca (con fondo transparente), usado en el hero, en la barra de navegación y como ícono de la pestaña del navegador.
-- `fotos/` — fotos reales de los 6 modelos de portacelulares.
+- `fotos/` — copia de las fotos originales de los 6 modelos, por si luego quieres reemplazarlas o usarlas en otro lugar. **No es necesaria para que la página funcione**: las fotos ya están incrustadas directamente dentro de `index.html`, así que aunque no subas esta carpeta, las imágenes se van a ver igual.
 
 ## Pendiente de completar (a propósito no se inventó nada)
 
@@ -22,12 +22,12 @@ No se incluyeron precios, testimonios, certificaciones, cantidades vendidas, dir
 ## Cómo publicarlo en GitHub Pages
 
 1. Crea un repositorio nuevo en GitHub.
-2. Sube `index.html`, `style.css`, `script.js`, `logo.png` y la carpeta `fotos/` completa a la raíz del repositorio.
-   - Desde la web: **Add file → Upload files**, arrastra todo (incluida la carpeta `fotos`) y confirma el commit.
+2. Sube `index.html`, `style.css`, `script.js` y `logo.png` a la raíz del repositorio. (La carpeta `fotos/` es opcional — ver nota arriba.)
+   - Desde la web: **Add file → Upload files**, arrastra los archivos y confirma el commit.
    - O con Git:
      ```
      git init
-     git add index.html style.css script.js logo.png fotos README.md
+     git add index.html style.css script.js logo.png README.md
      git commit -m "Sitio MaderArte Eco"
      git branch -M main
      git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
