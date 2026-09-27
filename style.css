@@ -1,17 +1,22 @@
 /* =========================================================
    MaderArte Eco — colores tomados del logo y de las fotos
+   Verde de las letras, verde de las hojas, arco dorado y tabla de madera
    ========================================================= */
 :root{
   --fondo:        #FBF5EC;  /* claro cálido */
   --fondo-foto:   #F3E3D2;  /* mismo beige del estudio de las fotos */
   --tarjeta:      #FFFCF7;
-  --tronco:       #2E1B13;  /* café del letrero del logo: títulos */
+  --tronco:       #0B3A14;  /* verde de las letras del logo: títulos */
   --corteza:      #5A3C29;  /* texto de párrafos */
   --caoba:        #984D2F;  /* detalles y etiquetas */
-  --bosque:       #1F4A1C;  /* verde oscuro del logo: botones */
-  --bosque-hover: #163814;
-  --bosque-fondo: #1E3A1B;  /* banda del equipo */
-  --miel:         #DDB069;  /* acento, con moderación */
+  --bosque:       #14491F;  /* verde del logo: botones */
+  --bosque-hover: #0B3A14;
+  --verde-logo:   #103F1B;  /* fondo de la presentación */
+  --hoja:         #7FAD3D;  /* verde claro de las hojas */
+  --oro:          #DF9F1E;  /* arco dorado del logo: acento */
+  --oro-hover:    #EDB23A;
+  --madera:       #DEA05F;  /* tabla del logo */
+  --crema:        #FFF6E6;
   --linea:        rgba(46,27,19,.12);
   --sombra:       0 1px 2px rgba(46,27,19,.06), 0 8px 24px rgba(46,27,19,.08);
 
@@ -59,7 +64,7 @@ p{ margin:0 0 1em; }
 .saltar:focus{ top:12px; }
 
 a:focus-visible, button:focus-visible{
-  outline:3px solid var(--miel);
+  outline:3px solid var(--oro);
   outline-offset:3px;
   border-radius:8px;
 }
@@ -100,18 +105,14 @@ a:focus-visible, button:focus-visible{
   border-bottom:1px solid var(--linea);
 }
 .nav-fila{ display:flex; align-items:center; gap:24px; height:68px; }
-.nav-marca{
-  display:flex; align-items:center; gap:10px;
-  text-decoration:none; color:var(--tronco);
-  font:700 1.15rem/1 var(--serif); font-variation-settings:"SOFT" 100;
-}
-.nav-marca img{ width:44px; height:auto; }
+.nav-marca{ display:flex; align-items:center; }
+.nav-marca img{ height:48px; width:auto; }
 .nav-menu{ display:flex; gap:28px; margin-left:auto; }
 .nav-menu a{
   color:var(--tronco); text-decoration:none; font-weight:700; font-size:.98rem;
   padding:6px 0; border-bottom:2px solid transparent;
 }
-.nav-menu a:hover{ border-bottom-color:var(--miel); }
+.nav-menu a:hover{ border-bottom-color:var(--oro); }
 .nav-acciones{ display:flex; align-items:center; gap:8px; }
 .nav-toggle{
   display:none;
@@ -121,8 +122,19 @@ a:focus-visible, button:focus-visible{
 }
 .nav-toggle span{ width:22px; height:2px; border-radius:2px; background:var(--tronco); }
 
-/* ---------- 1. Presentación ---------- */
-.hero{ padding:64px 0 80px; }
+/* ---------- 1. Presentación: el logo es el protagonista ---------- */
+.hero{
+  padding:64px 0 84px;
+  background:var(--verde-logo);
+  color:var(--crema);
+}
+.hero-logo{ margin:0 0 20px; }
+.hero-logo img{
+  width:100%;
+  max-width:600px;
+  height:auto;
+  filter:drop-shadow(0 14px 22px rgba(0,0,0,.35));
+}
 .hero-grid{
   display:grid;
   grid-template-columns:1.1fr .9fr;
@@ -132,24 +144,28 @@ a:focus-visible, button:focus-visible{
 .lema{
   font:italic 600 clamp(1.2rem, 2.4vw, 1.5rem)/1.3 var(--serif);
   font-variation-settings:"SOFT" 100;
-  color:var(--caoba);
-  margin:-.1em 0 .9em;
+  color:var(--oro);
+  margin:0 0 .7em;
 }
-.hero-lead{ font-size:1.15rem; max-width:34ch; margin-bottom:1.6em; }
+.hero-lead{ font-size:1.15rem; max-width:40ch; margin-bottom:1.6em; }
+.hero .enlace{ color:var(--crema); }
+.hero .enlace:hover{ color:var(--oro); }
+.btn-oro{ background:var(--oro); color:var(--tronco); }
+.btn-oro:hover{ background:var(--oro-hover); }
 .hero-acciones{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
 
 /* el arco: elemento distintivo de la página */
 .hero-foto{ display:flex; justify-content:center; }
 .arco{
   position:relative;
-  width:min(100%, 420px);
+  width:min(100%, 380px);
   aspect-ratio:4/5;
 }
 .arco::before{
   content:"";
   position:absolute; inset:0;
   transform:translate(18px, 18px);
-  background:var(--bosque);
+  background:var(--oro);
   border-radius:999px 999px 20px 20px;
 }
 .arco img{
@@ -162,14 +178,12 @@ a:focus-visible, button:focus-visible{
 
 /* ---------- 2. Equipo y video ---------- */
 .equipo{
-  background:var(--bosque-fondo);
-  color:#EDE3D2;
-  padding:72px 0;
+  background:var(--fondo-foto);
+  padding:76px 0;
 }
-.equipo h2, .equipo h3{ color:#FFF8EC; }
 .equipo-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:.8fr 1.2fr;
   gap:48px;
   align-items:center;
 }
@@ -177,10 +191,13 @@ a:focus-visible, button:focus-visible{
 .equipo-foto{ margin:0; }
 .equipo-foto img{
   width:100%;
-  aspect-ratio:4/3;
+  height:auto;
+  aspect-ratio:3/2;
   object-fit:cover;
-  border-radius:16px;
-  background:rgba(255,255,255,.06);
+  object-position:50% 85%;
+  border-radius:18px;
+  background:#E6D2BC;
+  box-shadow:0 14px 30px rgba(46,27,19,.18);
 }
 .equipo.sin-foto .equipo-foto{ display:none; }
 .equipo.sin-foto .equipo-grid{ grid-template-columns:1fr; }
@@ -193,7 +210,7 @@ a:focus-visible, button:focus-visible{
   aspect-ratio:16/9;
   border-radius:16px;
   overflow:hidden;
-  background:#132812;
+  background:var(--verde-logo);
 }
 .video-marco iframe, .video-marco video{ width:100%; height:100%; border:0; display:block; background:#000; }
 .video-portada{
@@ -207,7 +224,7 @@ a:focus-visible, button:focus-visible{
   position:absolute; left:50%; top:50%;
   transform:translate(-50%,-50%);
   width:76px; height:76px; border-radius:50%;
-  background:var(--miel);
+  background:var(--oro);
   display:flex; align-items:center; justify-content:center;
   box-shadow:0 6px 20px rgba(0,0,0,.3);
   transition:transform .15s ease;
@@ -256,7 +273,8 @@ a:focus-visible, button:focus-visible{
 /* ---------- 4. Contacto ---------- */
 .contacto{ padding:0 0 88px; }
 .contacto-panel{
-  background:var(--fondo-foto);
+  background:#F3E3D2;
+  border-top:6px solid var(--madera);
   border-radius:24px;
   padding:56px 28px;
   text-align:center;
@@ -267,7 +285,7 @@ a:focus-visible, button:focus-visible{
 /* ---------- Pie ---------- */
 .pie{ border-top:1px solid var(--linea); padding:32px 0 40px; }
 .pie-fila{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
-.pie-fila img{ width:52px; height:auto; }
+.pie-fila img{ width:130px; height:auto; }
 .pie p{ margin:0; font-size:.95rem; max-width:62ch; }
 .pie-anio{ margin-left:auto !important; color:var(--corteza); }
 
@@ -281,7 +299,7 @@ a:focus-visible, button:focus-visible{
 @media (max-width: 720px){
   body{ font-size:1rem; }
   .nav-fila{ height:62px; gap:10px; }
-  .nav-marca span{ display:none; }
+  .nav-marca img{ height:42px; }
   .nav-toggle{ display:flex; }
   .nav-acciones{ margin-left:auto; }
   .nav-menu{
@@ -297,12 +315,15 @@ a:focus-visible, button:focus-visible{
   .nav-menu a{ padding:14px 4px; border-bottom:1px solid var(--linea); font-size:1.05rem; }
   .nav-menu a:last-child{ border-bottom:0; }
 
-  .hero{ padding:32px 0 56px; }
+  .hero{ padding:28px 0 56px; }
+  .hero-logo{ margin:0 -6px 14px; }
   .hero-grid{ grid-template-columns:1fr; gap:36px; }
   .hero-lead{ font-size:1.08rem; }
   .hero-acciones{ flex-direction:column; align-items:stretch; gap:14px; text-align:center; }
   .arco{ width:min(78%, 320px); }
   .arco::before{ transform:translate(12px, 12px); }
+  .equipo-foto{ margin:0 -8px; }
+  .equipo-foto img{ aspect-ratio:1/1; object-position:50% 80%; }
 
   .equipo{ padding:56px 0; }
   .video{ margin-top:40px; }

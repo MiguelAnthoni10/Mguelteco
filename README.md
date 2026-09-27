@@ -9,7 +9,10 @@ Recorrido: presentación → equipo «Los constructores de sueños» y video →
 - `index.html` — estructura y contenido
 - `style.css` — diseño (colores tomados del logo y de las fotos)
 - `script.js` — configuración, enlaces de WhatsApp, menú del celular y video
-- `logo.png`, `favicon.png` — logo optimizado e ícono de la pestaña
+- `logo.png` — logo oficial (versión grande, con fondo transparente), protagonista de la presentación
+- `logo-chico.png` — el mismo logo en tamaño pequeño, para el menú y el pie de página
+- `favicon.png`, `apple-touch-icon.png` — ícono de la pestaña y del acceso directo en celulares
+- `equipo.jpg` — foto del equipo «Los constructores de sueños»
 - `clasico-horizontal.jpg`, `guitarra-eco.jpg`, `hoja-eco.jpg`, `sol-andino.jpg`, `nevado.jpg`, `mirador-eco.jpg` — fotos de los modelos
 
 Todos van en la raíz del repositorio (sin carpetas).
@@ -22,9 +25,9 @@ Todo está en UN solo lugar: al inicio de `script.js`, en `CONFIG`.
 
 Los 9 botones de la página (menú, inicio, los 6 productos y contacto) y el número visible en «Contacto» se generan desde ahí. Cada botón «Consultar» envía el nombre exacto del modelo, tomado del título de su tarjeta.
 
-## Agregar la foto del equipo
+## Cambiar la foto del equipo
 
-Sube la foto con el nombre exacto `equipo.jpg` a la raíz del repositorio. Aparece sola; mientras no exista, ese espacio se oculta sin dejar imagen rota. Recomendado: horizontal, unos 1200 px de ancho y menos de 300 KB.
+Reemplaza `equipo.jpg` por otra foto con el mismo nombre. Si el archivo no existe, ese espacio se oculta sin dejar imagen rota. Recomendado: horizontal, unos 1200 px de ancho y menos de 300 KB.
 
 ## Agregar el video «Conoce MaderArte Eco»
 
