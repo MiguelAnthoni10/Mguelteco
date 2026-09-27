@@ -131,15 +131,16 @@ a:focus-visible, button:focus-visible{
 .hero-logo{ margin:0 0 20px; }
 .hero-logo img{
   width:100%;
-  max-width:600px;
+  max-width:640px;
   height:auto;
+  margin:0 auto;
   filter:drop-shadow(0 14px 22px rgba(0,0,0,.35));
 }
 .hero-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:48px;
+  display:flex;
+  flex-direction:column;
   align-items:center;
+  text-align:center;
 }
 .lema{
   font:italic 600 clamp(1.2rem, 2.4vw, 1.5rem)/1.3 var(--serif);
@@ -147,34 +148,12 @@ a:focus-visible, button:focus-visible{
   color:var(--oro);
   margin:0 0 .7em;
 }
-.hero-lead{ font-size:1.15rem; max-width:40ch; margin-bottom:1.6em; }
+.hero-lead{ font-size:1.15rem; max-width:44ch; margin:0 auto 1.6em; }
 .hero .enlace{ color:var(--crema); }
 .hero .enlace:hover{ color:var(--oro); }
 .btn-oro{ background:var(--oro); color:var(--tronco); }
 .btn-oro:hover{ background:var(--oro-hover); }
-.hero-acciones{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
-
-/* el arco: elemento distintivo de la página */
-.hero-foto{ display:flex; justify-content:center; }
-.arco{
-  position:relative;
-  width:min(100%, 380px);
-  aspect-ratio:4/5;
-}
-.arco::before{
-  content:"";
-  position:absolute; inset:0;
-  transform:translate(18px, 18px);
-  background:var(--oro);
-  border-radius:999px 999px 20px 20px;
-}
-.arco img{
-  position:relative;
-  width:100%; height:100%;
-  object-fit:cover;
-  background:var(--fondo-foto);
-  border-radius:999px 999px 20px 20px;
-}
+.hero-acciones{ display:flex; align-items:center; justify-content:center; gap:20px; flex-wrap:wrap; }
 
 /* ---------- 2. Equipo y video ---------- */
 .equipo{
@@ -259,16 +238,27 @@ a:focus-visible, button:focus-visible{
 }
 .posicion{
   align-self:flex-start;
-  font-size:.82rem; font-weight:800;
-  color:var(--caoba);
-  background:#F6E6D8;
-  padding:4px 10px;
-  border-radius:6px;
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:.85rem; font-weight:700;
+  color:var(--bosque);
+  background:#EAF2DF;          /* verde claro de las hojas, suave */
+  border:1px solid #CFE0B8;
+  padding:4px 12px 4px 10px;
+  border-radius:999px;
   margin-bottom:10px;
 }
+/* pequeño dibujo del celular en su posición */
+.posicion::before{
+  content:"";
+  border:2px solid currentColor;
+  border-radius:3px;
+  flex:none;
+}
+.posicion-h::before{ width:16px; height:10px; }
+.posicion-v::before{ width:10px; height:16px; }
 .producto-nombre{ font-size:1.3rem; margin-bottom:.35em; }
 .producto-info p{ font-size:.97rem; margin-bottom:18px; }
-.btn-consultar{ margin-top:auto; width:100%; }
+.btn-consultar{ margin-top:auto; width:100%; padding:12px 14px; font-size:.95rem; }
 
 /* ---------- 4. Contacto ---------- */
 .contacto{ padding:0 0 88px; }
@@ -290,8 +280,10 @@ a:focus-visible, button:focus-visible{
 .pie-anio{ margin-left:auto !important; color:var(--corteza); }
 
 /* ---------- Tabletas ---------- */
-@media (max-width: 960px){
+@media (max-width: 1080px){
   .grid-productos{ grid-template-columns:repeat(2, 1fr); gap:22px; }
+}
+@media (max-width: 960px){
   .equipo-grid{ grid-template-columns:1fr; gap:32px; }
 }
 
@@ -317,11 +309,9 @@ a:focus-visible, button:focus-visible{
 
   .hero{ padding:28px 0 56px; }
   .hero-logo{ margin:0 -6px 14px; }
-  .hero-grid{ grid-template-columns:1fr; gap:36px; }
+
   .hero-lead{ font-size:1.08rem; }
-  .hero-acciones{ flex-direction:column; align-items:stretch; gap:14px; text-align:center; }
-  .arco{ width:min(78%, 320px); }
-  .arco::before{ transform:translate(12px, 12px); }
+  .hero-acciones{ flex-direction:column; align-items:stretch; gap:14px; width:100%; }
   .equipo-foto{ margin:0 -8px; }
   .equipo-foto img{ aspect-ratio:1/1; object-position:50% 80%; }
 
