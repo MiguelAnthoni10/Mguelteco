@@ -21,6 +21,33 @@ const CONFIG = {
 
 /* ========================================================= */
 
+// Al entrar, la página SIEMPRE abre en el inicio.
+// Solo el enlace del QR (…/#catalogo) lleva directo al catálogo.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+(function abrirEnInicio() {
+  const destinoPermitido = ['#catalogo', '#productos'];
+  if (location.hash && !destinoPermitido.includes(location.hash)) {
+    history.replaceState(null, '', location.pathname + location.search);
+    window.scrollTo(0, 0);
+  } else if (!location.hash) {
+    window.scrollTo(0, 0);
+  }
+})();
+
+// Menú y botones internos: desplazan suave SIN cambiar la dirección de la página
+const sinMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    const id = a.getAttribute('href');       // se lee al pulsar (los de WhatsApp ya no empiezan con #)
+    if (!id || !id.startsWith('#')) return;
+    const destino = id === '#inicio' ? document.body : document.querySelector(id);
+    if (!destino) return;
+    e.preventDefault();
+    if (id === '#inicio') window.scrollTo({ top: 0, behavior: sinMovimiento ? 'auto' : 'smooth' });
+    else destino.scrollIntoView({ behavior: sinMovimiento ? 'auto' : 'smooth', block: 'start' });
+  });
+});
+
 // Enlaces de WhatsApp
 function enlaceWhatsApp(texto) {
   return 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(texto);
