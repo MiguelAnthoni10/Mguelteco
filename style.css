@@ -238,14 +238,14 @@ a:focus-visible, button:focus-visible{
 .posicion{
   align-self:flex-start;
   display:inline-flex; align-items:center; gap:8px;
-  font-size:.85rem; font-weight:700;
+  font-size:.85rem; font-weight:700; line-height:1.4;
   color:var(--bosque);
   background:#EAF2DF;          /* verde claro de las hojas, suave */
   border:1px solid #CFE0B8;
   padding:4px 12px 4px 10px;
   border-radius:999px;
-  margin-bottom:10px;
 }
+.etiquetas{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
 /* pequeño dibujo del celular en su posición */
 .posicion::before{
   content:"";
@@ -255,6 +255,12 @@ a:focus-visible, button:focus-visible{
 }
 .posicion-h::before{ width:16px; height:10px; }
 .posicion-v::before{ width:10px; height:16px; }
+/* etiqueta especial: solo el modelo que tiene LED */
+.posicion-led{ color:#6B4A0E; background:#FBEFD2; border-color:#EFD08E; }
+.posicion-led::before{
+  width:8px; height:8px; border:0; border-radius:50%;
+  background:#5FD13A; box-shadow:0 0 0 2px rgba(95,209,58,.25), 0 0 6px #5FD13A;
+}
 .producto-nombre{ font-size:1.3rem; margin-bottom:.35em; }
 .producto-info p{ font-size:.97rem; margin-bottom:18px; }
 .btn-consultar{ margin-top:auto; width:100%; padding:12px 14px; font-size:.95rem; }

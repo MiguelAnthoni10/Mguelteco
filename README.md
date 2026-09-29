@@ -13,7 +13,7 @@ Recorrido: presentación → equipo «Los constructores de sueños» y video →
 - `logo-chico.png` — el mismo logo en tamaño pequeño, para el menú y el pie de página
 - `favicon.png`, `apple-touch-icon.png` — ícono de la pestaña y del acceso directo en celulares
 - `equipo.jpg` — foto del equipo «Los constructores de sueños»
-- `clasico-horizontal.jpg`, `guitarra-eco.jpg`, `hoja-eco.jpg`, `sol-andino.jpg`, `nevado.jpg`, `mirador-eco.jpg` — fotos de los modelos
+- Fotos de los 10 modelos: `guitarra-eco.jpg`, `hoja-eco.jpg`, `sol-andino.jpg`, `nevado.jpg`, `mirador-eco.jpg`, `guerrero-sechin.jpg`, `laguna-paron.jpg`, `lanzon-chavin.jpg`, `chankillo.jpg`, `tortuga-led.jpg`
 
 Todos van en la raíz del repositorio (sin carpetas).
 
@@ -23,7 +23,7 @@ Todo está en UN solo lugar: al inicio de `script.js`, en `CONFIG`.
 
     whatsapp: '51981203987',
 
-Los 9 botones de la página (menú, inicio, los 6 productos y contacto) y el número visible en «Contacto» se generan desde ahí. Cada botón «Consultar» envía el nombre exacto del modelo, tomado del título de su tarjeta.
+Los 13 botones de la página (menú, inicio, los 10 productos y contacto) y el número visible en «Contacto» se generan desde ahí. Cada botón «Consultar» envía el nombre exacto del modelo, tomado del título de su tarjeta.
 
 ## Cambiar la foto del equipo
 
