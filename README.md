@@ -21,7 +21,7 @@ Todos van en la raíz del repositorio (sin carpetas).
 
 Todo está en UN solo lugar: al inicio de `script.js`, en `CONFIG`.
 
-    whatsapp: '51981203987',
+    whatsapp: '51921994355',
 
 Los 13 botones de la página (menú, inicio, los 10 productos y contacto) y el número visible en «Contacto» se generan desde ahí. Cada botón «Consultar» envía el nombre exacto del modelo, tomado del título de su tarjeta.
 

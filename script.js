@@ -3,7 +3,7 @@
    ========================================================= */
 const CONFIG = {
   // Número de WhatsApp con código de país (51 = Perú), sin espacios ni símbolos
-  whatsapp: '51981203987',
+  whatsapp: '51921994355',
 
   // Mensaje para los botones generales (menú, inicio, contacto)
   mensajeGeneral: 'Hola, quiero consultar por los portacelulares de MaderArte Eco.',
